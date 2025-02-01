@@ -74,16 +74,16 @@ J'ai conçu le schéma de l'entrepot de données sous forme d'un snowflake schem
 
 Le schéma de la base de donnée sera de la forme suivante:
 
-| listen_history_fact | user_dim     | track_dim   | artist_dim    | genre_dim    | songwriter_dim    |
-| ------------------- | ------------ | ----------- | ------------- | ------------ | ----------------- |
-| listen_id (PK)      | user_id (PK) | track_id    | artist_id (PK)| genre_id (PK)| songwriter_id (PK)|
-| user_id (FK)        | first_name   | name        | name          | name         | name              |
-| track_id (FK)       | last_name    | artist_id   |               |              |                   |
-| listen_timestamp    | email        | album       |               |              |                   |
-|                     | gender       | duration    |               |              |                   |
-|                     | email        | genre_id    |               |              |                   |
-|                     | created_at   | created_at  |               |              |                   |
-|                     |              | updated_at  |               |              |                   |
+| listen_history_fact | user_dim     | track_dim     | artist_dim    | genre_dim    | songwriter_dim    |
+| ------------------- | ------------ | ------------- | ------------- | ------------ | ----------------- |
+| listen_id (PK)      | user_id (PK) | track_id(PK)  | artist_id (PK)| genre_id (PK)| songwriter_id (PK)|
+| user_id (FK)        | first_name   | name          | name          | name         | name              |
+| track_id (FK)       | last_name    | artist_id(FK) |               |              |                   |
+| listen_timestamp    | email        | album         |               |              |                   |
+|                     | gender       | duration      |               |              |                   |
+|                     | email        | genre_id (FK) |               |              |                   |
+|                     | created_at   | created_at    |               |              |                   |
+|                     |              | updated_at    |               |              |                   |
 
 [![Data Warehouse Schema](step_4.png)](step_4.png)
 
