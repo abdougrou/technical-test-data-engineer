@@ -81,8 +81,8 @@ Le schéma de la base de donnée sera de la forme suivante:
 | track_id (FK)       | last_name    | artist_id(FK) |               |              |                   |
 | listen_timestamp    | email        | album         |               |              |                   |
 |                     | gender       | duration      |               |              |                   |
-|                     | email        | genre_id (FK) |               |              |                   |
-|                     | created_at   | created_at    |               |              |                   |
+|                     | created_at   | genre_id (FK) |               |              |                   |
+|                     |              | created_at    |               |              |                   |
 |                     |              | updated_at    |               |              |                   |
 
 [![Data Warehouse Schema](step_4.png)](step_4.png)
