@@ -31,7 +31,6 @@ class DailyIngestionPipeline:
                 response = requests.get(url, params={"page": page, "size": 100})
                 response.raise_for_status()
                 data = response.json()
-                print(response.json())
 
                 if not data["items"]:
                     break

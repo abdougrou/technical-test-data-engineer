@@ -31,7 +31,6 @@ class TestDailyIngestionPipeline:
         ]
 
         data = self.pipeline.fetch_data('tracks')
-        print(data)
 
         assert len(data) == 4
         assert mock_get.call_count == 3
